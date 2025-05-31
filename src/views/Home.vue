@@ -1,23 +1,23 @@
-<template>
-  <div>
-    <!-- Hero Section -->
-    <section class="bg-primary-600 text-white py-16">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center">
-          <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl">
-            Discover Your Next Favorite Book
-          </h1>
-          <p class="mt-4 text-xl text-primary-100">
-            Explore our vast collection of books across all genres
-          </p>
-          <div class="mt-8">
-            <router-link to="/books" class="btn bg-white text-primary-600 hover:bg-primary-50">
-              Browse Books
-            </router-link>
-          </div>
-        </div>
-      </div>
-    </section>
+<template> 
+  <div> 
+    <!-- Hero Section --> 
+    <section class="bg-primary-600 text-white py-16"> 
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
+        <div class="text-center"> 
+          <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl"> 
+            Discover Your Next Favorite Book 
+          </h1> 
+          <p class="mt-4 text-xl text-primary-100"> 
+            Explore our vast collection of books across all genres 
+          </p> 
+          <div class="mt-8"> 
+            <router-link to="/books" class="btn bg-white text-primary-600 hover:bg-primary-50"> 
+              Browse Books 
+            </router-link> 
+          </div> 
+        </div> 
+      </div> 
+    </section> 
 
     <!-- Featured Books -->
     <div class="mt-16">
@@ -121,3 +121,4 @@ const addToCart = (book) => {
 <script setup>
 // Home component logic here
 </script>
+
