@@ -111,3 +111,13 @@ const addToCart = (book) => {
   })
 }
 </script> 
+<template>
+  <div>
+    <h1 class="text-3xl font-bold text-gray-900 mb-8">Welcome to BookShop</h1>
+    <p class="text-gray-600">Home page content - to be implemented</p>
+  </div>
+</template>
+
+<script setup>
+// Home component logic here
+</script>
