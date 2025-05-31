@@ -11,7 +11,7 @@
         <h1 class="text-3xl font-bold text-gray-900">{{ book.title }}</h1>
         <p class="text-xl text-gray-600 mt-2">by {{ book.author }}</p>
         
-        <div class="mt-4 flex items-center space-x-4">
+        <div class="mt-4 flex items-center space-x-4">    
           <div class="flex items-center">
             <span class="text-yellow-400">★★★★★</span>
             <span class="ml-2 text-gray-600">({{ book.reviews }} reviews)</span>
