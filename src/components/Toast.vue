@@ -17,10 +17,10 @@
           </div>
           <div class="ml-3">
             <p class="text-sm font-medium text-green-800">{{ message }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div>   
+        </div>    
+      </div>      
+    </div>   
   </Transition>
 </template>
 
@@ -48,3 +48,13 @@ watch(show, (newValue) => {
   }
 })
 </script> 
+
+
+
+
+
+
+
+
+
+
