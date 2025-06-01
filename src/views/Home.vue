@@ -117,17 +117,3 @@ const addToCart = (book) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-

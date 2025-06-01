@@ -102,9 +102,9 @@
         </div>
       </div>
 
-      <!-- Books Grid -->
+                <!-- Books Grid -->
       <div class="flex-1">
-        <!-- Search and Sort -->
+                <!-- Search and Sort -->
         <div class="flex flex-col sm:flex-row justify-between items-center mb-6 gap-4">
           <div class="w-full sm:w-64">
             <input 
@@ -124,10 +124,10 @@
             <option value="priceLow">Price: Low to High</option>
             <option value="priceHigh">Price: High to Low</option>
             <option value="newest">Newest First</option>
-          </select>
-        </div>
+          </select>    
+        </div>        
 
-        <!-- Books Grid -->
+                        <!-- Books Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <div v-for="book in filteredBooks" :key="book.id" class="card group">
             <div class="relative aspect-[3/4] overflow-hidden">
@@ -148,11 +148,11 @@
           </div>
         </div>
 
-        <!-- No Results Message -->
+            <!-- No Results Message -->
         <div v-if="filteredBooks.length === 0" class="text-center py-8">
-          <p class="text-gray-500">No books found matching your criteria.</p>
-        </div>
-
+          <p class="text-gray-500">No books found matching your criteria.</p>   
+        </div>   
+    
         <!-- Pagination -->
         <div class="mt-8 flex justify-center">
           <nav class="flex items-center space-x-2">
@@ -161,13 +161,13 @@
               :disabled="currentPage === 1"
               @click="currentPage--"
             >Previous</button>
-            <button 
-              v-for="page in totalPages" 
-              :key="page"
+            <button    
+              v-for="page in totalPages"     
+              :key="page"   
               class="px-3 py-1 rounded-md"
               :class="currentPage === page ? 'bg-primary-600 text-white' : 'border border-gray-300 text-gray-700 hover:bg-gray-50'"
-              @click="currentPage = page"
-            >{{ page }}</button>
+              @click="currentPage = page" 
+            >{{ page }}</button> 
             <button 
               class="px-3 py-1 rounded-md border border-gray-300 text-gray-500 hover:bg-gray-50"
               :disabled="currentPage === totalPages"
@@ -186,7 +186,10 @@ import { useCartStore } from '../stores/cart'
 
 const cartStore = useCartStore()
 
-// In a real application, this would be fetched from an API
+
+
+  
+    // In a real application, this would be fetched from an API
 const allBooks = ref([
   {
     id: 1,
@@ -403,3 +406,7 @@ const addToCart = (book) => {
   })
 }
 </script> 
+
+
+
+
