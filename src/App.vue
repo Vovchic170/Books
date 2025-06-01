@@ -37,8 +37,3 @@ const cartStore = useCartStore()
 <style scoped>
 /* Add any custom styles here */
 </style>
-
-
-
-
-
